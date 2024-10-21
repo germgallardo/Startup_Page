@@ -53,3 +53,23 @@ hr {
   transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
   /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
 }
+
+.navbar-brand {
+    display: inline-flex; /* Align items inside */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 150px; /* Set desired width */
+    height: 75px; /* Set desired height */
+    border: none; /* Remove border */
+    background-color: transparent; /* Make background transparent */
+    padding: 0; /* Remove padding */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+.navbar-brand:hover {
+  background-color: transparent;
+  border-color: transparent;
+  transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
+  /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
+}
+
