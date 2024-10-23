@@ -3,7 +3,18 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+}
+
+.index-background {
   background: url(./images/Peruvian-Andes-gallery7.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home-background {
+  background: url(./images/sea.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -52,9 +63,11 @@ hr {
   border-color: transparent;
   transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
   /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
+  transition: 1.0s; /* smooth transitions */
 }
 
 .navbar-brand, .nav-link {
+    background-color: transparent !important; /* Ensure background is transparent */
     display: inline-flex; /* Align items inside */
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
@@ -67,9 +80,11 @@ hr {
 }
 
 .navbar-brand:hover, .nav-link:hover {
-  background-color: transparent;
+  background-color: transparent !important; /* Ensure background is transparent */
   border-color: transparent;
   transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
   /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
+  transition: 1.0s; /* smooth transitions */
+
 }
 
