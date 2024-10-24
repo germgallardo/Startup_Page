@@ -14,7 +14,7 @@ html {
 }
 
 .home-background {
-  background: url(./images/sea.jpg) no-repeat center center fixed; 
+  background: url("./images/sea.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -34,49 +34,49 @@ hr {
   opacity: 1;
 }
 
-.buffer {
-  height: 12rem;
+.home-custom-button {
+  display: inline-flex; /* Align items inside */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 200px; /* Set desired width */
+  height: 100px; /* Set desired height */
+  border: none; /* Remove border */
+  background-color: transparent; /* Make background transparent */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Change cursor on hover */
+  margin-top: 15px; /* Adjust vertical position */
+  transition: transform 1s ease; /* Transition for when turning back from hover from increasing size */
 }
 
-.custom-button {
-    display: inline-flex; /* Align items inside */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    width: 200px; /* Set desired width */
-    height: 100px; /* Set desired height */
-    border: none; /* Remove border */
-    background-color: transparent; /* Make background transparent */
-    padding: 0; /* Remove padding */
-    cursor: pointer; /* Change cursor on hover */
-}
-
-.button-image {
-    max-width: 110%; /* Scale image to fit */
-    max-height: 110%; /* Scale image to fit */
-    object-fit: contain; /* Maintain aspect ratio */
-    display: block;
-    filter: brightness(0.1); /* Darken the image */
-}
-
-.custom-button:hover {
+.home-custom-button:hover {
   background-color: transparent;
   border-color: transparent;
   transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
   /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
-  transition: 1.0s; /* smooth transitions */
+  transition: 1.0s ease; /* smooth transitions for when it increases size */
+}
+
+.button-image {
+  max-width: 115%; /* Scale image to fit */
+  max-height: 115%; /* Scale image to fit */
+  object-fit: contain; /* Maintain aspect ratio */
+  display: block;
+  filter: brightness(0.1); /* Darken the image */
 }
 
 .navbar-brand, .nav-link {
-    background-color: transparent !important; /* Ensure background is transparent */
-    display: inline-flex; /* Align items inside */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    width: 150px; /* Set desired width */
-    height: 75px; /* Set desired height */
-    border: none; /* Remove border */
-    background-color: transparent; /* Make background transparent */
-    padding: 0; /* Remove padding */
-    cursor: pointer; /* Change cursor on hover */
+  position: relative;
+  background-color: transparent !important; /* Ensure background is transparent */
+  display: flex; /* Align items inside */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 120px; /* Set desired width */
+  height: 100px; /* Set desired height */
+  border: none; /* Remove border */
+  background-color: transparent; /* Make background transparent */
+  padding: 0; /* Remove padding */
+  cursor: pointer; /* Change cursor on hover */
+  transition: transform 1s ease; /* Transition for when turning back from hover from increasing size */
 }
 
 .navbar-brand:hover, .nav-link:hover {
@@ -84,7 +84,64 @@ hr {
   border-color: transparent;
   transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
   /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
-  transition: 1.0s; /* smooth transitions */
-
+  transition: 1.0s ease; /* smooth transitions for when it increases size */
 }
 
+.navbar-nav {
+  display: flex; /* Use Flexbox for alignment */
+  justify-content: space-around; /* Space items evenly */
+  padding: 0; /* Remove padding */
+  list-style: none; /* Remove default list styles */
+}
+
+.button-image-page {
+  width: 75px; /* Width for all images */
+  height: 75px; /* Height for all images */
+  margin-right: 300px;
+  object-fit: contain; /* Maintain aspect ratio */
+  display: block;
+  filter: brightness(0.1); /* Darken the image if you decrease the value */
+}
+
+#logo {
+  position: absolute;
+  left: 0;
+  left: 100px;
+}
+
+#skyscanner {
+  position: absolute;
+  width: 80px; 
+  height: 80px;
+}
+
+#booking {
+  position: absolute;
+  width: 65px;
+  height: 65px; 
+}
+
+.wrapper {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items in a column */
+  min-height: 100vh; /* Ensure it takes at least full viewport height */
+}
+
+.page-header {
+  flex: 1; /* Allow it to grow and fill available space */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 20px; /* Optional padding */
+}
+
+.container {
+    max-width: 100%; /* Ensure container does not exceed viewport */
+    padding: 0; /* Optional padding */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Background color for footer */
+    padding: 20px 0; /* Padding for footer */
+    text-align: center; /* Center footer text */
+}
