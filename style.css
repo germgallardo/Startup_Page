@@ -74,10 +74,18 @@ hr {
   height: 100px; /* Set desired height */
   border: none; /* Remove border */
   background-color: transparent; /* Make background transparent */
-  margin-right: 30px; /* Space between buttons */
+  margin-right: 70px; /* Space between buttons */
   padding: 0; /* Remove padding */
   cursor: pointer; /* Change cursor on hover */
-  transition: transform 1s ease; /* Transition for when turning back from hover from increasing size */
+  transition: transform 1s ease !important; /* Transition for when turning back from hover from increasing size */
+}
+
+.navbar-brand {
+    margin-left: 120px; /* Add space on the left of the logo */
+}
+
+.nav-item{
+  margin-right: 120px; /* Add space on the right of the navigation images */
 }
 
 .navbar-brand:hover, .nav-link:hover {
@@ -89,13 +97,6 @@ hr {
   transform-origin: center; /* Scale from the center */
 }
 
-.navbar-nav {
-  display: flex; /* Use Flexbox for alignment */
-  justify-content: space-around; /* Space items evenly */
-  padding: 0; /* Remove padding */
-  list-style: none; /* Remove default list styles */
-}
-
 .button-image-page {
   width: 75px; /* Width for all images */
   height: 75px; /* Height for all images */
@@ -104,21 +105,16 @@ hr {
   filter: brightness(0.1); /* Darken the image if you decrease the value */
 }
 
-#logo {
-  position: absolute;
-  margin-left: 150px;
-}
-
 #skyscanner {
-  position: absolute;
-  width: 80px; 
-  height: 80px;
+  width: 100px; 
+  height: 100px;
 }
 
 #booking {
   position: absolute;
-  width: 65px;
-  height: 65px; 
+  width: 70px;
+  height: 70px;
+  right: 10px; 
 }
 
 .wrapper {
