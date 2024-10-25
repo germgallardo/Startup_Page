@@ -67,13 +67,14 @@ hr {
 .navbar-brand, .nav-link {
   position: relative;
   background-color: transparent !important; /* Ensure background is transparent */
-  display: flex; /* Align items inside */
+  display: inline-flex; /* Align items inside */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
   width: 120px; /* Set desired width */
   height: 100px; /* Set desired height */
   border: none; /* Remove border */
   background-color: transparent; /* Make background transparent */
+  margin-right: 30px; /* Space between buttons */
   padding: 0; /* Remove padding */
   cursor: pointer; /* Change cursor on hover */
   transition: transform 1s ease; /* Transition for when turning back from hover from increasing size */
@@ -85,6 +86,7 @@ hr {
   transform: scale(1.1);  /* this is the transition that we apply, i.e. width*1.1 (the rest too) */
   /* padding: 1rem 2rem;  /* this does exactly the opposite to transform */
   transition: 1.0s ease; /* smooth transitions for when it increases size */
+  transform-origin: center; /* Scale from the center */
 }
 
 .navbar-nav {
@@ -97,7 +99,6 @@ hr {
 .button-image-page {
   width: 75px; /* Width for all images */
   height: 75px; /* Height for all images */
-  margin-right: 300px;
   object-fit: contain; /* Maintain aspect ratio */
   display: block;
   filter: brightness(0.1); /* Darken the image if you decrease the value */
@@ -105,8 +106,7 @@ hr {
 
 #logo {
   position: absolute;
-  left: 0;
-  left: 100px;
+  margin-left: 150px;
 }
 
 #skyscanner {
@@ -132,7 +132,6 @@ hr {
   display: flex; /* Use flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  padding: 20px; /* Optional padding */
 }
 
 .container {
@@ -141,7 +140,11 @@ hr {
 }
 
 .footer {
+    display: flex;
     background-color: #f8f9fa; /* Background color for footer */
     padding: 20px 0; /* Padding for footer */
     text-align: center; /* Center footer text */
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
