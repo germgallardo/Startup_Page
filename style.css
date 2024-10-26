@@ -3,6 +3,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* This makes 1rem = 16px, useful so your page doesnt depend on pixels and is seen the same in different screen types */
 }
 
 .index-background {
@@ -27,10 +28,10 @@ h1 {
 }
 
 hr {
-  margin: 20px auto;
+  margin: 1.25rem auto;
   color: #F05F44;
-  border: 3px solid #F05F44;
-  max-width: 325px;  /* defines the maximum width of the hr */
+  border: 0.2rem solid #F05F44;
+  max-width: 20rem;  /* defines the maximum width of the hr */
   opacity: 1;
 }
 
@@ -38,13 +39,13 @@ hr {
   display: inline-flex; /* Align items inside */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  width: 200px; /* Set desired width */
-  height: 100px; /* Set desired height */
+  width: 13rem; /* Set desired width */
+  height: 6.5rem; /* Set desired height */
   border: none; /* Remove border */
   background-color: transparent; /* Make background transparent */
   padding: 0; /* Remove padding */
   cursor: pointer; /* Change cursor on hover */
-  margin-top: 15px; /* Adjust vertical position */
+  margin-top: 1rem; /* Adjust vertical position */
   transition: transform 1s ease; /* Transition for when turning back from hover from increasing size */
 }
 
@@ -70,22 +71,22 @@ hr {
   display: inline-flex; /* Align items inside */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  width: 120px; /* Set desired width */
-  height: 100px; /* Set desired height */
+  width: 7.5rem; /* Set desired width */
+  height: 6.5rem; /* Set desired height */
   border: none; /* Remove border */
   background-color: transparent; /* Make background transparent */
-  margin-right: 70px; /* Space between buttons */
+  margin-right: 5rem; /* Space between buttons */
   padding: 0; /* Remove padding */
   cursor: pointer; /* Change cursor on hover */
   transition: transform 1s ease !important; /* Transition for when turning back from hover from increasing size */
 }
 
 .navbar-brand {
-    margin-left: 120px; /* Add space on the left of the logo */
+    margin-left: 7.5rem; /* Add space on the left of the logo */
 }
 
 .nav-item{
-  margin-right: 120px; /* Add space on the right of the navigation images */
+  margin-right: 7.5rem; /* Add space on the right of the navigation images */
 }
 
 .navbar-brand:hover, .nav-link:hover {
@@ -98,8 +99,8 @@ hr {
 }
 
 .button-image-page {
-  width: 75px; /* Width for all images */
-  height: 75px; /* Height for all images */
+  width: 4.7rem; /* Width for all images */
+  height: 4.7rem; /* Height for all images */
   object-fit: contain; /* Maintain aspect ratio */
   display: block;
   filter: brightness(0.1); /* Darken the image if you decrease the value */
@@ -138,9 +139,10 @@ hr {
 .footer {
     display: flex;
     background-color: #f8f9fa; /* Background color for footer */
-    padding: 20px 0; /* Padding for footer */
+    padding: 1rem 2rem; /* Like margins but padding doesnt merge if there are two items consequently*/
     text-align: center; /* Center footer text */
     bottom: 0;
     position: absolute;
     width: 100%;
 }
+
