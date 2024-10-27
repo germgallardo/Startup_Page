@@ -146,3 +146,12 @@ hr {
     width: 100%;
 }
 
+.content-center {
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+.card-img-top {
+  width: 100%; /* Scale image to fit */
+  height: 100%; /* Scale image to fit */
+}
