@@ -194,3 +194,10 @@ hr {
     opacity: 1; /* Ensure it is fully opaque */
     font-size: 2rem;
 }
+
+.carousel-caption h5 {
+    font-size: 1.75rem; /* Increase font size for headings */
+    font-weight: bold; /* Make the text bold */
+    color: #F05F44;
+    border-radius: 5px; /* Slightly rounded corners */
+}
