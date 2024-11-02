@@ -198,6 +198,7 @@ hr {
 .carousel-caption h5 {
     font-size: 1.75rem; /* Increase font size for headings */
     font-weight: bold; /* Make the text bold */
-    color: #F05F44;
+    color: white;
     border-radius: 5px; /* Slightly rounded corners */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0); /* Shadow for contrast */
 }
