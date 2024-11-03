@@ -138,12 +138,19 @@ hr {
 
 .footer {
     display: flex;
-    background-color: #f8f9fa; /* Background color for footer */
+    background-color: transparent; /* Background color for footer */
+    color: white;
     padding: 1rem 2rem; /* Like margins but padding doesnt merge if there are two items consequently*/
+    font-size: 1.2rem;
     text-align: center; /* Center footer text */
     bottom: 0;
     position: absolute;
     width: 100%;
+}
+
+.footer nav ul li {
+    margin: 0 15px; /* Add horizontal space between items */
+    display: inline; /* Display items in a single line */
 }
 
 .content-center {
