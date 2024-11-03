@@ -140,8 +140,10 @@ hr {
     display: flex;
     background-color: transparent; /* Background color for footer */
     color: white;
+    border-radius: 5px; /* Slightly rounded corners */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0); /* Shadow for contrast */
     padding: 1rem 2rem; /* Like margins but padding doesnt merge if there are two items consequently*/
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center; /* Center footer text */
     bottom: 0;
     position: absolute;
@@ -149,7 +151,7 @@ hr {
 }
 
 .footer nav ul li {
-    margin: 0 15px; /* Add horizontal space between items */
+    margin: 0 20px; /* Add horizontal space between items */
     display: inline; /* Display items in a single line */
 }
 
