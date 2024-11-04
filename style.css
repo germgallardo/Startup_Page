@@ -211,3 +211,29 @@ hr {
     border-radius: 5px; /* Slightly rounded corners */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0); /* Shadow for contrast */
 }
+
+.ship {
+    position: absolute;
+    bottom: 7rem; /* Position the ship near the bottom */
+    left: 50%; /* Center the ship horizontally */
+    transform: translateX(-50%); /* Center the image */
+    animation: sail 10s linear infinite; /* Animation properties */
+}
+
+@keyframes sail {
+    0% {
+        transform: translate(-50%, 0) scale(1.2); /* Start at original size */
+    }
+    25% {
+        transform: translate(-40%, -10px) scale(1.3); /* Move slightly up and right */
+    }
+    50% {
+        transform: translate(-50%, -10px) scale(1.27); /* Move up and center */
+    }
+    75% {
+        transform: translate(-60%, -10px) scale(1.23); /* Move slightly up and left */
+    }
+    100% {
+        transform: translate(-50%, 0) scale(1.2); /* Return to original position */
+    }
+}
