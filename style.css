@@ -139,11 +139,12 @@ hr {
 .footer {
     display: flex;
     background-color: transparent; /* Background color for footer */
+    font-family: Times New Roman;
     color: white;
     border-radius: 5px; /* Slightly rounded corners */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 1.0); /* Shadow for contrast */
     padding: 1rem 2rem; /* Like margins but padding doesnt merge if there are two items consequently*/
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center; /* Center footer text */
     bottom: 0;
     position: absolute;
@@ -236,4 +237,13 @@ hr {
     100% {
         transform: translate(-50%, 0) scale(1.2); /* Return to original position */
     }
+}
+
+.h1-seo {
+    font-size: 3rem !important; /* Increase font size for headings */
+    font-weight: bold; /* Make the text bold */
+    font-family: Lucida Handwriting;
+    color: #e2dbdb;
+    border-radius: 5px; /* Slightly rounded corners */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Shadow for contrast */
 }
