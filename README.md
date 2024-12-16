@@ -1,6 +1,6 @@
 # Startup Landing Page
 
-** Adaptation: Instead of a Startup page I built a webpage to showcase different travel locations **
+**Adaptation: Instead of a Startup page I built a webpage to showcase different travel locations**
 
 [Coding challenge](https://github.com/zero-to-mastery/Coding_Challenge-8) from ZTM to build a startup landing page using Bootstrap 5 to showcase your product and with an email signup form.
 
